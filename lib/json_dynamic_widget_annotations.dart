@@ -7,12 +7,12 @@ class JsonBuilder {
   const JsonBuilder();
 }
 
-class JsonBuilderParam {
-  const JsonBuilderParam();
+class JsonBuildArg {
+  const JsonBuildArg();
 }
 
-class JsonParamAlias {
-  const JsonParamAlias({
+class JsonArgAlias {
+  const JsonArgAlias({
     required this.alias,
     required this.name,
   });
@@ -21,14 +21,14 @@ class JsonParamAlias {
   final String name;
 }
 
-class JsonParamDecoder {
-  const JsonParamDecoder(this.param);
+class JsonArgDecoder {
+  const JsonArgDecoder(this.param);
 
   final String param;
 }
 
-class JsonParamSchema {
-  const JsonParamSchema(this.param);
+class JsonArgSchema {
+  const JsonArgSchema(this.param);
 
   final String param;
 }
@@ -48,21 +48,17 @@ class JsonSchemaName {
 class JsonWidget {
   const JsonWidget({
     this.autoRegister = true,
+    this.type,
     this.widget,
   });
 
   final bool autoRegister;
+  final String? type;
   final String? widget;
 }
 
 class JsonWidgetRegistrar {
   const JsonWidgetRegistrar();
-}
-
-enum NumSupportedChildren {
-  many,
-  one,
-  zero;
 }
 
 class JsonWidgetRegistration {
