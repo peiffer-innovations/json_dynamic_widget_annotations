@@ -1,3 +1,3 @@
-## [1.0.0] - July 17th, 2023
+## [1.0.0] - August 12th, 2023
 
 * Initial release
